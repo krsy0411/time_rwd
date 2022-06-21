@@ -1,3 +1,68 @@
 @charset 'UTF-8';
 @import 'reset';
 @import url(http://fonts.googleapis.com/css?family=Orbitron);
+
+main {
+    width: 100%;
+    height: 100%;
+    // height에 100%를 적용시키기 위해서
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    // 배경이미지가 반복되지 않도록
+    background-repeat: no-repeat;
+    // 배경이미지 위치
+    background-position: center;
+    // 배경이미지가 원래의 비율을 유지하도록
+    background-size: cover;
+    
+    background-image: url(../img/bg_morning.jpg);
+
+    header {
+        width: 90vw;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        // header 자식요소들을 가로배치
+        display: flex;
+        // 간격 동일
+        justify-content: space-between;
+        // 세로 가운데 정렬
+        align-items: center;
+
+        h1 {
+            font: bold 30px/1 "orbitron";
+            color: #fff;
+        }
+
+        #gnb {
+            display: flex;
+
+            li {
+                // 상하 좌우 외부여백
+                margin: 0px 40px;
+
+                a {
+                    font: bold 14px/1 'arial';
+                    color: #fff;
+                }
+            }
+        }
+
+        #sns {
+            display: flex;
+
+            li {
+                // 상하 좌우 외부 여백
+                margin: 0px 10px;
+
+                // 폰트
+                i {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
