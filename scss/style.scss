@@ -107,6 +107,12 @@ main {
             position: absolute;
             top: 98px;
             left: 132px;
+            // line-height로 세로 가운데 배치
+            font: 60px/300px 'orbitron';
+            color: #fff;
+            // 가로 가운데 배치
+            text-align: center;
+            overflow: hidden;
         }
     }
 }

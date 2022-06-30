@@ -118,5 +118,9 @@ main figure .screen {
   position: absolute;
   top: 98px;
   left: 132px;
+  font: 60px/300px 'orbitron';
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
