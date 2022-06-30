@@ -65,4 +65,48 @@ main {
             }
         }
     }
+
+    article {
+        width: 40vw;
+        position: absolute;
+        top: 40vh;
+        left: 5vw;
+
+        p {
+            font: 4vw/1 "orbitron";
+            color: #fff;
+            margin-bottom: 20px;
+
+            strong {
+                 opacity: 0.7;
+            }
+        }
+        em {
+            font: bold 14px/1.2 'arial';
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    }
+
+    figure {
+        width: 1200px;
+        height: 800px;
+        position: absolute;
+        right: -5vw;
+        bottom: -5vh;
+        // 가로 세로 위치 조정
+        background-position: right top;
+        background-repeat: no-repeat;
+        // 원래 비율 유지
+        background-size: contain;
+        background-image: url(../img/phone_morning.png);
+
+        .screen {
+            width: 540px;
+            height: 300px;
+            position: absolute;
+            top: 98px;
+            left: 132px;
+        }
+    }
 }
