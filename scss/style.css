@@ -80,8 +80,10 @@ main header #sns li i {
 main article {
   width: 40vw;
   position: absolute;
-  top: 40vh;
+  top: 50%;
   left: 5vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 main article p {
@@ -104,8 +106,10 @@ main figure {
   width: 1200px;
   height: 800px;
   position: absolute;
-  right: -5vw;
-  bottom: -5vh;
+  right: -50px;
+  top: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -122,5 +126,48 @@ main figure .screen {
   color: #fff;
   text-align: center;
   overflow: hidden;
+}
+
+main nav {
+  width: 90vw;
+  height: 35px;
+  position: absolute;
+  left: 5vw;
+  bottom: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main nav a {
+  width: 23%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 12px/1 'orbitron';
+  color: #fff;
+  letter-spacing: 2px;
+  border: 1px solid #bbb;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main nav a.on {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  color: #000;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
